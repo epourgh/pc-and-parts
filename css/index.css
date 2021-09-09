@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
 * {
     font-family: 'Rubik', sans-serif;
@@ -8,19 +9,24 @@
 
 nav {
     position: fixed;
-    top: 0;
     z-index: 2;
     width: 100vw;
     margin: 0;
-    background: rgb(142, 142, 221);
+    background: #000;
     padding: 20px;
 }
 
 nav a {
-    color: #fff;
+    color: rgb(175, 175, 175);
     text-decoration: none;
     padding: 10px;
 }
+
+nav a:hover {
+    color: #fff;
+    font-weight: 900;
+}
+
 
 nav ul {
     text-decoration: none;
@@ -33,18 +39,26 @@ nav ul li {
 }
 
 .banner {
-    background: #ccc;
+    padding: 7em 0 3em 0;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(40deg, rgba(35,69,150,1) 0%, rgba(74,179,109,1) 100%);
+}
+
+.banner h1 {
+    font-size: 3em;
+    font-family: 'Roboto Slab', serif;
 }
 
 .microsoft-registered {
     width: 100vw;
     margin: auto;
     text-align: center;
-    padding: 5em 0;
+    padding: 3em 0;
 }
 
 .microsoft-registered img {
-    width: 15em
+    width: 9em
 }
 
 .grid {
@@ -69,7 +83,8 @@ nav ul li {
 }
 
 .image-wrapper img {
-    height: 200px;
+    height: 12em;
+    width: 15em
 }
 
 .custom-ul {
@@ -83,3 +98,23 @@ nav ul li {
     padding-right: 10px;
 }
 
+.card-information {
+    padding: 20px;
+}
+
+.help {
+    background: rgba(260, 260, 260, .1);
+    border-radius: 5px;
+    border: 0;
+    width: 10em;
+    height: 3em;
+    border: 1px solid rgba(260, 260, 260, .3);
+    color: #fff;
+    padding: 3px 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.help:hover {
+    background: rgba(260, 260, 260, .15);
+}

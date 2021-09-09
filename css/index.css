@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    margin: 0;
+    background: rgb(142, 142, 221);
+    padding: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.banner {
+    background: #ccc;
+}
+
+.microsoft-registered {
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.microsoft-registered img {
+    width: 15em
+}
+
+.grid {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 75vw;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 1px 5px 20px #ccc;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.image-wrapper {
+    padding: 0;
+    margin: 0;
+}
+
+.image-wrapper img {
+    height: 200px;
+}
+
+.custom-ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.custom-ul li {
+    display: inline;
+    padding-right: 10px;
+}
+

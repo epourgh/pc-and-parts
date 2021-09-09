@@ -15,12 +15,13 @@ nav {
     margin: 0;
     background: #000;
     padding: 20px;
+    
 }
 
 nav a {
     color: rgb(175, 175, 175);
     text-decoration: none;
-    padding: 10px;
+    padding: 0;
 }
 
 nav a:hover {
@@ -29,11 +30,17 @@ nav a:hover {
 }
 
 nav ul {
-    display: none;
+    transition: max-height 1s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    margin-top: 3em;
 }
 
 .nav-ul-display {
-    display: inline;
+    max-height: 100vh;
 }
 
 .hamburger {
@@ -230,6 +237,7 @@ nav ul {
     }
 
     .help-button {
+        margin: 0;
         width: 12em;
         height: 3em;
         display: inline;
@@ -253,6 +261,9 @@ nav ul {
         width: 15em
     }
 
+    nav a {
+        padding: 10px;
+    }
 
     nav ul {
         display: inline;
@@ -263,6 +274,10 @@ nav ul {
 
     nav ul li {
         display: inline;
+    }
+
+    nav ul li a {
+        text-transform: lowercase ;
     }
 
     .hamburger {

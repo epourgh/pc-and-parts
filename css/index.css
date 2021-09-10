@@ -106,11 +106,11 @@ nav ul li {
     width: 100vw;
     margin: auto;
     text-align: center;
-    padding: 3em 0;
+    padding: 4em 0 1em 0;
 }
 
 .microsoft-registered img {
-    width: 12em
+    width: 8em
 }
 
 .microsoft-desktop-icon {
@@ -148,13 +148,13 @@ nav ul li {
 }
 
 .custom-ul li {
-    display: inline;
+    display:inline-block;
     padding-right: 10px;
     color: #fff;
     background:rgba(35, 69, 150, .75);
     padding: 0 10px;
     border-radius: 20px;
-    margin: 10px 0 !important;
+    margin: 2px 3px;
 }
 
 .card-information {
@@ -186,37 +186,58 @@ nav ul li {
     background: rgba(260, 260, 260, .2);
 }
 
-.mobile-landing-page-semi-circle {
-    position: absolute; 
-    height: 80px;
-    width: 160px;
-    bottom: 0;  
-    border-radius: 120px 120px 0 0;
-    background-color: #000; 
-    left: 0; 
-    right: 0; 
-    margin: auto;
-    color: #fff;
-}
-
-.mobile-landing-page-semi-circle::after {
-    background: #fff;
-    color: #000;
-}
-
-.mobile-landing-page-semi-circle p {
-    position: absolute;
-    bottom: 10px;
-    left: 0; 
-    right: 0; 
-    margin: auto;
-}
-
 :target::before {
   content: "";
   display: block;
   height: 40px; 
   margin: 40px 0 0;
+}
+
+footer {
+    background: rgb(226, 226, 226);
+    text-align: center;
+    margin-top: 3em;
+    padding: 3em 0;
+}
+
+
+.mobile-landing-page-semi-circle {
+    position: absolute; 
+    bottom: 0;  
+    left: 0; 
+    right: 0; 
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+}
+
+@media screen and (min-height: 500px) {
+    
+    .microsoft-registered {
+        padding: 4em 0 3em 0;
+    }
+
+    .mobile-landing-page-semi-circle {
+        margin: auto;
+        height: 80px;
+        width: 160px;
+        border-radius: 120px 120px 0 0;
+        background-color: #000; 
+    }
+
+    .mobile-landing-page-semi-circle::after {
+        background: #fff;
+        color: #000;
+    }
+
+    .mobile-landing-page-semi-circle p {
+        position: absolute;
+        bottom: 10px;
+        left: 0; 
+        right: 0; 
+        margin: auto;
+    }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -284,8 +305,14 @@ nav ul li {
         display: none;
     }
 
+    .microsoft-registered {
+        padding: 3em 0;
+    }
+
     .microsoft-desktop-icon {
         display: block;
+        border: 1px solid rgb(228, 228, 228);
+        margin-bottom: 3em;
     }
 
     .microsoft-mobile-icon {
